@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Lato:wght@400;700&family=Nunito:wght@200;300;400;600;700&family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* nav bar */
+nav {
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+    position: static;
+    top: 0;
+    margin-bottom: 32px;
+    background: white;
+    padding: 10px;
+}
+
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bar-icon {
+    font-size: 32px;
+}
+
+/* hero section */
+
+.hero {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tag {
+    background-color: #149f39;
+    padding: 5px 10px;
+    color: wheat;
+    align-self: flex-start;
+}
+
+.hero-content h1 {
+    font-size: 72px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+
+.explore-btn {
+    background-color: #ffc866;
+    align-self: flex-start;
+}
+
+@media(max-width:786px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-img img {
+        width: 80%;
+    }
+
+    .hero-content {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+
+    }
+}
